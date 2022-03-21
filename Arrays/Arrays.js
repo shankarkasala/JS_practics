@@ -88,9 +88,7 @@ console.log(f);
 const items1 = ["a", "b", "c", "d", "e", "f"];
 const r = "c";
 const re = [];
-items1.filter((item) => {
-  if (item !== r) {
-    res.push(item);
-  }
-});
+items1.filter((item) => item !== r);
 console.log(re);
+const remove = ["c", "d"];
+const j = items1.filter((item) => !remove.includes(item));
