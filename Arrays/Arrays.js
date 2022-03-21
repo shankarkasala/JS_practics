@@ -74,3 +74,23 @@ function checkCase(ch) {
 console.log(checkCase("a"));
 console.log(checkCase("A"));
 console.log(checkCase("1"));
+
+//remove item
+const items = ["a", "b", "c", "d", "e", "f"];
+const i = 2;
+const filteredItems = items
+  .slice(0, i)
+  .concat(items.slice(i + 1, items.length));
+console.log(filteredItems);
+const f = items.slice(0, i).concat(items.slice(i + 1));
+console.log(f);
+
+const items1 = ["a", "b", "c", "d", "e", "f"];
+const r = "c";
+const re = [];
+items1.filter((item) => {
+  if (item !== r) {
+    res.push(item);
+  }
+});
+console.log(re);
