@@ -57,3 +57,20 @@ const update = (veggies, veggie) => {
   }
 };
 update(veggies, "potato");
+
+//case checking
+function checkCase(ch) {
+  if (!isNaN(ch * 1)) {
+    return "ch is numeric";
+  } else {
+    if (ch == ch.toUpperCase()) {
+      return "upper case";
+    }
+    if (ch == ch.toLowerCase()) {
+      return "lower case";
+    }
+  }
+}
+console.log(checkCase("a"));
+console.log(checkCase("A"));
+console.log(checkCase("1"));
