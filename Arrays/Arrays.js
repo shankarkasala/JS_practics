@@ -92,3 +92,24 @@ items1.filter((item) => item !== r);
 console.log(re);
 const remove = ["c", "d"];
 const j = items1.filter((item) => !remove.includes(item));
+
+let arr = [[1, 2], 3, 4];
+
+function flatten(arr) {
+  let stack = [...arr];
+  let res = [];
+  while (stack.length) {
+    let next = stack.pop();
+    if (Array.isArray(next)) {
+      console.log(stack);
+      stack.push(...next);
+      console.log("stack " + stack);
+    } else {
+      res.push(next);
+      console.log("res " + res);
+    }
+  }
+  return res.reverse();
+}
+const sol = flatten(arr);
+console.log(sol);
