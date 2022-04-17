@@ -46,6 +46,10 @@ for (let num in g) {
     ans.push(g[num]);
   }
 }
+let values = Object.values(g);
+let keys = Object.keys(g);
+let enteies = Object.entries(g);
+console.log(keys);
 console.log(ans);
 let res1 = ans.filter((a) => a !== 0);
 console.log(res1);
